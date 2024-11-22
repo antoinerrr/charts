@@ -47,6 +47,7 @@ Chart version 1.0.0 introduced RBacDefinitions with rbac-manager to manage acces
 | job.backoffLimit | int | `3` | The backoff limit for the job |
 | job.restartPolicy | string | `"Never"` |  |
 | job.schedule | string | `"0 */4 * * *"` | The schedule for the cronjob to run on |
+| job.preserveNamespace | bool | `false` | If true, will preserve the namespace|
 | job.dryRun | bool | `true` | If true, will only log candidates for removal and not remove them |
 | job.debug | bool | `false` | If true, will enable debug logging |
 | job.serviceAccount.create | bool | `true` | If true, a service account will be created for the job to use |
